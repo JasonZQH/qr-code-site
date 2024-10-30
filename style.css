@@ -1,0 +1,36 @@
+/* 设置背景图片 */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://你的用户名.github.io/仓库名/mt.rainier.jpg'); /* 替换为实际的GitHub链接 */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/* 设置透明文本框样式 */
+.content-box {
+    width: 80%;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.6); /* 透明度 */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5;
+}
