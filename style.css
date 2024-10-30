@@ -33,6 +33,16 @@ h1 {
     padding-bottom: 10px;
 }
 
+h5 {
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    font-size: 10px;
+    margin: 0;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
 p {
     position: relative;
     top: 20%;
@@ -47,6 +57,16 @@ p {
     padding: 10px;
     border-radius: 8px;
     margin-bottom: 1em;
+}
+
+#audio-control, #background-audio {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    display: none; /* 初始隐藏 */
 }
 
 @media (max-width: 768px) { /* 平板或小屏设备 */

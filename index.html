@@ -9,6 +9,7 @@
 <body>
     <div class='contant-box'>
         <h1> 致歉 </h1>
+        <h5>(请点击页面空白处)</h5>
         <p> 对不起，之前太冲动了，也对不起没有在找你。 你一定都还好对吧，也许现在是很幸福快乐的。
             也不确定要说些什么，我也不狡辩什么了，已经要把你耗尽了对吧。其实说分手的那天晚上我好像已经
             无法反驳了，都挺认同你说的，唯一想说的不是我故意要说提前把你送机场，但也是以为你很想让我送
@@ -28,10 +29,23 @@
         </p>
     </div>
     
-    <!-- 背景音乐自动播放 -->
-    <audio autoplay loop>
-        <source src="你的音乐链接.mp3" type="audio/mpeg">
+    <audio id="background-audio" loop controls style="display: none;">
+        <source src="于心有愧.m4a" type="audio/mp4">
         您的浏览器不支持播放音频。
     </audio>
+
+    <script>
+        // 在用户首次点击页面时播放音乐并显示控件
+        document.addEventListener('click', function() {
+            const audio = document.getElementById('background-audio');
+            // 尝试播放音乐并显示控制条
+            audio.play().then(() => {
+                // 播放成功后显示控制条
+                audio.style.display = "block";
+            }).catch(error => {
+                console.log('播放失败:', error);
+            });
+        }, { once: true });
+    </script>
 </body>
 </html>
