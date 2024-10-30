@@ -25,12 +25,44 @@ body {
 }
 
 h1 {
+    position: absolute;
+    top: 30px;
+    left: 30px;
     font-size: 2em;
     margin: 0;
     padding-bottom: 10px;
 }
 
 p {
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 1em;
     line-height: 1.5;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+@media (max-width: 768px) { /* 平板或小屏设备 */
+    h1 {
+        font-size: 1.8em;
+    }
+    p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) { /* 手机 */
+    h1 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 0.8em;
+    }
 }
